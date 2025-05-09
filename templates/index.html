@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Hello PVG</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Company Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Hello PVG!</h1>
-        <p>Welcome to your styled Flask app on Google App Engine.</p>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Dashboard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Reports</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+        </ul>
+        <form class="d-flex ms-3">
+          <input class="form-control me-2" type="search" placeholder="Search..." />
+          <button class="btn btn-light" type="submit">Search</button>
+        </form>
+      </div>
     </div>
+  </nav>
+
+  <!-- Dashboard Cards -->
+  <div class="container-fluid dashboard-cards ">
+    <div class="row row-cols-md-3">
+      <div class="col"> <div class="card">
+          <div class="card-body">
+            <div class="icon"><i class="bi-person-fill"></i></div>
+            <h5 class="card-title">Total Employees</h5>
+            <p class="card-text">500 Employees</p>
+          </div>
+        </div>
+      </div>
+      <div class="col"><div class="card">
+          <div class="card-body">
+            <div class="icon"><i class="bi-cash-stack"></i></div>
+            <h5 class="card-title">Revenue</h5>
+            <p class="card-text">$1.2M</p>
+          </div>
+        </div>
+      </div>
+      <div class="col"><div class="card">
+          <div class="card-body">
+            <div class="icon"><i class="bi-graph-up"></i></div>
+            <h5 class="card-title">Sales Growth</h5>
+            <p class="card-text">20% Growth</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="mb-0">© 2025 Company Dashboard</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
