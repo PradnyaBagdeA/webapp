@@ -1,0 +1,30 @@
+Console
+New project
+Select project
+Goto billing > check project has enable billing
+Go to project page
+
+Go to app engine though 3 lines
+Search ‘create an application in app engine standard’
+Select create your project | google app engine std
+
+Scroll down and select open app creation
+
+Country>next
+
+Select python and standard
+
+Click on task bar icon Activate cloud shell
+
+
+git clone https://github.com/GoogleCloudPlatform/python-docs-samples.git
+
+Cd ~
+
+rm -rf python-docs-samples/
+
+
+
+
+
+
